@@ -71,10 +71,10 @@ theme_mode: [dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: "https://imagedelivery.net"  # Cloudflare Images
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "https://avatars.githubusercontent.com/u/85202803?v=4"
+avatar: "/UnzHYuseZjpgJ5VEgCbryw/f6bf19a2-96b6-45b6-0dc7-f3d41d870100/public" # profile.jpeg
 
 # boolean type, the global switch for TOC in posts.
 toc: true
