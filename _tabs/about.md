@@ -10,7 +10,7 @@ Sou desenvolvedor de software e graduando em Ciência da Computação no Brasil.
 
 Gosto de criar coisas com Python, bancos de dados SQL, Docker e estruturas de back-end modernas para resolver problemas das pessoas ao meu redor. 🚀
 
-Atualmente tenho dedicado grande parte do meu tempo ao estudo do [Django](https://www.djangoproject.com/) para desenvolvimento web, ao mesmo tempo em que desenvolvo o [**Poupy**](https://github.com/henriquesebastiao/poupy/) para fins de aprendizado. 🎓
+Atualmente tenho dedicado grande parte do meu tempo ao estudo do [Django](https://www.djangoproject.com/) para desenvolvimento web.
 
 Você pode me encontrar em:
 
@@ -22,27 +22,13 @@ Você pode me encontrar em:
 <!-- Ícones de Tecnologias -->
 <div style="display: inline_block">
   <h4>Tecnologias e ferramentas que utilizo:</h4>
-  <img align="center" alt="Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-  <img align="center" alt="Django" height="30" width="40" src="https://www.svgrepo.com/show/353657/django-icon.svg">
-  <img align="center" alt="Pytest" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg">
-  <img align="center" alt="C" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
-  <img align="center" alt="HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-  <img align="center" alt="CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-  <img align="center" alt="SQLite" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg">
-  <img align="center" alt="MySQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
-  <img align="center" alt="PostgreSQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg">
-  <img align="center" alt="Docker" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg">
-</div>
-
-<!-- Minhas redes sociais -->
-<!-- LINKEDIN -->
-<div style="display: inline_block">
-  <h4>Minhas redes sociais:</h4>
-  <a href="https://www.linkedin.com/in/henriquesebastiao/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white" target="_blank"></a>
-  <!-- TWITTER -->
-  <a href="https://twitter.com/hick_hs" target="_blank"><img src="https://img.shields.io/badge/Twitter-000000?logo=x&logoColor=white" target="_blank"></a>
-  <!-- INSTAGRAM -->
-  <a href="https://www.instagram.com/hick.hs/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white" target="_blank"></a>
-  <!-- HACKER RANK -->
-  <a href="https://www.hackerrank.com/profile/hick_hs" target="_blank"><img src="https://img.shields.io/badge/Hackerrank-32C766?logo=HackerRank&logoColor=white" target="_blank"></a>
+  <img align="center" alt="Python" height="30" width="40" src="/UnzHYuseZjpgJ5VEgCbryw/4ab506f8-88cd-47b2-41c3-a56e15179f00/public">
+  <img align="center" alt="Django" height="30" width="40" src="/UnzHYuseZjpgJ5VEgCbryw/bed0c704-e375-4591-3b9f-317d50da5500/public">
+  <img align="center" alt="Pytest" height="30" width="40" src="/UnzHYuseZjpgJ5VEgCbryw/798f488a-b729-4394-a560-69dcdfbbf800/public">
+  <img align="center" alt="HTML" height="30" width="40" src="/UnzHYuseZjpgJ5VEgCbryw/8116890d-7a7a-4f7c-1d97-d8e796f33400/public">
+  <img align="center" alt="CSS" height="30" width="40" src="/UnzHYuseZjpgJ5VEgCbryw/a9fb8cb3-e4c7-40a0-88e9-9dd1d1a1f100/public">
+  <img align="center" alt="SQLite" height="30" width="40" src="/UnzHYuseZjpgJ5VEgCbryw/94f3cfa8-8228-4ede-ba87-366954603700/public">
+  <img align="center" alt="MySQL" height="30" width="40" src="/UnzHYuseZjpgJ5VEgCbryw/f8a17a76-d186-4aee-ff0a-5db6e2f3c300/public">
+  <img align="center" alt="PostgreSQL" height="30" width="40" src="/UnzHYuseZjpgJ5VEgCbryw/b4e680fd-05b4-4fb3-2450-35a2993d4e00/public">
+  <img align="center" alt="Docker" height="30" width="40" src="/UnzHYuseZjpgJ5VEgCbryw/5af7dfd1-78a2-4c2f-b51a-ee50af615c00/public">
 </div>
