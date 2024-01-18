@@ -54,9 +54,22 @@ line-length = 79
 profile = "black"
 line_length = 79
 
+[tool.coverage.run]
+branch = true
+omit = ["**/*test*.py"]
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+python_files = "test.py tests.py test_*.py tests_*.py *_test.py *_tests.py"
+
 [tool.taskipy.tasks]
-lint = 'ruff . && blue --check . --diff'
-format = 'blue .  && isort .'
+lint = "ruff . && blue --check . --diff && isort --check --diff ."
+format = "blue .  && isort ."
+doc = "mkdocs serve"
+pre_test = "task lint"
+test = "pytest -s -x --cov=<YOUR-PROJECT> -vv"
+post_test = "coverage run -m pytest && coverage html"
 ```
 {: file="pyproject.toml" }
 
