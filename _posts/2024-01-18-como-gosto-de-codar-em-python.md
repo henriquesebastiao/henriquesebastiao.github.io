@@ -1,13 +1,13 @@
 ---
 title: Como gosto de codar em Python
 author: henriquesebastiao
-date: 2024-01-18 10:38:00 -0400
+date: 2024-01-18 11:24:00 -0400
 categories: [Blog, Programação]
 tags: [blog, programacao, desenvolvimento, python]
 pin: true
 ---
 
-Um guia de ferramentas que sempre uso em meus projetos pessoais em Python para organizar o código e mais alguns truques.
+Um guia de ferramentas que sempre uso em meus projetos pessoais Python para organizar o código e mais alguns truques.
 
 Com o tempo aprendi a gostar de organizar meus códigos Python desde o início do projeto, seguindo a maneira que eu gosto de programar e também a PEP8. Grande parte dessas ferramentas aprendi gracas ao [@dunossauro](https://dunossauro.com/), e tambem algumas boas praticas.
 
@@ -24,29 +24,25 @@ Se você também gostar dessas dicas, me sentirei honrado em poder te ajudar. E 
 - [Ruff](https://docs.astral.sh/ruff/), um poderoso linter para Python;
 - [Isort](https://pycqa.github.io/isort/), para organizar meus imports.
 
-```bash
+```terminal
 poetry add --group dev pytest coverage pytest-cov taskipy blue ruff isort
 ```
-{: .nolineno }
-```bash
+```terminal
 pip install pytest coverage pytest-cov taskipy blue ruff isort
 ```
-{: .nolineno }
 
 ## Ferramentas de documentação
 
-- [Material for MkDocs](https://github.com/squidfunk/mkdocs-material/)
-- [mkdocstrings](https://mkdocstrings.github.io/)
-- [mkdocstrings-python](https://mkdocstrings.github.io/python/)
+- [Material for MkDocs](https://github.com/squidfunk/mkdocs-material/), um framework para a criação da documentação;
+- [mkdocstrings](https://mkdocstrings.github.io/), uma ferramenta que gera documentação a partir das docstrings no código;
+- [mkdocstrings-python](https://mkdocstrings.github.io/python/), o plugin de suporte python para o mkdocstrings.
 
-```bash
+```terminal
 poetry add --group doc mkdocs-material mkdocstrings mkdocstrings-python
 ```
-{: .nolineno }
-```bash
+```terminal
 pip install mkdocs-material mkdocstrings mkdocstrings-python
 ```
-{: .nolineno }
 
 ## Configurações
 
