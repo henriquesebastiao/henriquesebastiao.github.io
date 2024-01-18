@@ -9,7 +9,7 @@ pin: true
 
 Um guia de ferramentas que sempre uso em meus projetos pessoais Python para organizar o código e mais alguns truques.
 
-Com o tempo aprendi a gostar de organizar meus códigos Python desde o início do projeto, seguindo a maneira que eu gosto de programar e também a PEP8. Grande parte dessas ferramentas aprendi gracas ao [@dunossauro](https://dunossauro.com/), e tambem algumas boas praticas.
+Com o tempo aprendi a gostar de organizar meus códigos Python desde o início do projeto, seguindo a maneira que eu gosto de programar e também a PEP8. Grande parte dessas ferramentas conheci graças ao [@dunossauro](https://dunossauro.com/), e também algumas boas práticas.
 
 Resolvi centralizar tudo aqui, assim sempre que eu iniciar um novo projeto posso pegar tudo aqui novamente hehe 😄.
 
