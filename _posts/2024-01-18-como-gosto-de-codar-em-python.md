@@ -107,6 +107,7 @@ Sempre configuro pipelines para meus projetos, assim caso eu esqueça de verific
 - Testes, executa todos os testes com [Pytest](https://docs.pytest.org/) e envia o relatório de cobertura para o Codecov.
 
 **AVISO**
+
 Substitua o trecho `<NAME-OF-YOUR-PYTHON-PACKAGE>` pelo nome do seu pacote!
 
 ```yml
