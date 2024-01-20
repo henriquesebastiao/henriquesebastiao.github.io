@@ -73,7 +73,41 @@ post_test = "coverage run -m pytest && coverage html"
 ```
 {: file="pyproject.toml" }
 
+## requirements.txt
+
+Mesmo que eu use poetry em um projeto, gosto de criar um arquivo de `requirements.txt` para duas coisas:
+
+- Informar ao PyCharm quais são as dependências do meu projeto;
+- E durante o fluxo do Github Actions para instalar as dependências com pi.
+
+Para criar o arquivo:
+
+```terminal
+pip freeze > requirements.txt
+```
+
+Ou:
+
+```terminal
+poetry export --with dev --without-hashes --without-urls --output requirements.txt
+```
+
+## Padrões de código
+
+Para docstrings sempre uso o padrão do [Google Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html). Me parece muito mais consiso o bonito.
+
 ## Integração Contínua com GitHub Actions
+
+Sempre configuro pipelines para meus projetos, assim caso eu esqueça de verificar algo antes de efetuar o push, o fluxo de trabalho do GitHub Actions realiza todas as verificações incluindo linters e testes, e envia uma notificação direto para meu celular informando se está tudo ok.
+
+### Trabalhos incluídos no ci.yml
+
+- [Ruff](https://docs.astral.sh/ruff/), linter para checar se estou seguindo a PEP8;
+- [Isort](https://pycqa.github.io/isort/), verifica se meus imports estão ordenados;
+- Testes, executa todos os testes com [Pytest](https://docs.pytest.org/) e envia o relatório de cobertura para o Codecov.
+
+**AVISO**
+Substitua o trecho `<NAME-OF-YOUR-PYTHON-PACKAGE>` pelo nome do seu pacote!
 
 ```yml
 on: [ push, pull_request ]
@@ -99,5 +133,65 @@ jobs:
         with:
           requirements-files: "requirements.txt"
           configuration: "--profile black -l 79"
+  
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: [ 3.11 ]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run Tests
+        run: pytest -s -x --cov=<NAME-OF-YOUR-PYTHON-PACKAGE> -vv
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 ```
 {: file=".github/workflows/ci.yml" }
+
+## Mensagens de commit
+
+Priorizo o uso de mensagens semânticas para os commits. Sempre procuro referências neste [repositório](https://github.com/iuricode/padroes-de-commits) de [Iuri Silva](https://github.com/iuricode).
+
+## Por que não descontrair um pouco?
+
+Sempre desenvolvemos projetos que são úteis para resolver alguns problemas, mas pode ser que este projeto não seja muito sério, ou que tenha sido feito apenas por diversão. Nesse caso, gosto de licenciar meu projeto sob a licença BEER-WARE, haha.
+
+Isso significa que você pode fazer o que quiser com o meu código. Se nos encontrarmos algum dia, e você achar que vale a pena, você pode me pagar uma cerveja 😁.
+
+```txt
+/*
+* ---------------------------------------------------------------------------------
+* "THE BEER-WARE LICENSE":
+* <contato@henriquesebastiao.com> wrote this file. If you are reading this license,
+* as long as you keep this note, you can do whatever you want with this code.
+* If we meet someday, and you think it's worth it, you can buy me a beer.
+* Henrique Sebastião
+* ---------------------------------------------------------------------------------
+*/
+```
+{: file="LICENSE" }
+
+```txt
+/*
+* --------------------------------------------------------------------------------------------
+* "THE BEER-WARE LICENSE":
+* <contato@henriquesebastiao.com> escreveu este arquivo. Se voce estiver lendo essa licensa,
+* contanto que mantenha esta nota, voce poderá fazer o que quiser com este código.
+* Se nos encontrarmos algum dia, e você achar que vale a pena, você pode me pagar uma cerveja.
+* Henrique Sebastião
+* --------------------------------------------------------------------------------------------
+*/
+```
+{: file="LICENSE" }
