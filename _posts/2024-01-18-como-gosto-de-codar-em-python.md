@@ -78,7 +78,7 @@ post_test = "coverage run -m pytest && coverage html"
 Mesmo que eu use poetry em um projeto, gosto de criar um arquivo de `requirements.txt` para duas coisas:
 
 - Informar ao PyCharm quais são as dependências do meu projeto;
-- E durante o fluxo do Github Actions para instalar as dependências com pi.
+- E durante o fluxo do Github Actions para instalar as dependências com pip.
 
 Para criar o arquivo:
 
@@ -170,7 +170,7 @@ Sempre desenvolvemos projetos que são úteis para resolver alguns problemas, ma
 
 Isso significa que você pode fazer o que quiser com o meu código. Se nos encontrarmos algum dia, e você achar que vale a pena, você pode me pagar uma cerveja 😁.
 
-```txt
+```
 /*
 * ---------------------------------------------------------------------------------
 * "THE BEER-WARE LICENSE":
@@ -183,7 +183,7 @@ Isso significa que você pode fazer o que quiser com o meu código. Se nos encon
 ```
 {: file="LICENSE" }
 
-```txt
+```
 /*
 * --------------------------------------------------------------------------------------------
 * "THE BEER-WARE LICENSE":
