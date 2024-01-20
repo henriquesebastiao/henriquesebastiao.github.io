@@ -3,9 +3,9 @@
 - type: twitter
   icon: "fa-brands fa-x-twitter"
 
-- type: instagram
-  icon: 'fa-brands fa-instagram'   # icons powered by <https://fontawesome.com/>
-  url:  'https://instagram.com/hick.hs/'
+# - type: instagram
+#   icon: 'fa-brands fa-instagram'   # icons powered by <https://fontawesome.com/>
+#   url:  ''
 
 # - type: rss
 #   icon: "fas fa-rss"

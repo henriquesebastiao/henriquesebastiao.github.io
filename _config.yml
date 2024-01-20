@@ -26,10 +26,10 @@ description: >- # used by seo meta and the atom feed
 url: "https://henriquesebastiao.com"
 
 github:
-  username: henriquesebastiao # change to your github username
+  username: henriquesebastiao
 
 twitter:
-  username: hick_hs # change to your twitter username
+  username: hick_hs
 
 social:
   # Change to your full name.
@@ -38,14 +38,11 @@ social:
   email: contato@henriquesebastiao.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/hick_hs # change to your twitter homepage
-    - https://instagram.com/hick.hs
-    - https://github.com/henriquesebastiao # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    - https://twitter.com/hick_hs
+    - https://github.com/henriquesebastiao
     - https://www.linkedin.com/in/henriquesebastiao
 
-google_site_verification: # fill in to your verification string
+google_site_verification: B2F5DBVpmj2QL-_8mF2X7e_Bxi_KuMdBeZ1zaKrq9BY
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -64,7 +61,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: [dark]
+theme_mode: [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
