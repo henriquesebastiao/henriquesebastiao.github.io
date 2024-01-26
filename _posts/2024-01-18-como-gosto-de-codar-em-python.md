@@ -25,10 +25,13 @@ Se você também gostar dessas dicas, me sentirei honrado em poder te ajudar. E 
 - [Isort](https://pycqa.github.io/isort/), para organizar meus imports.
 
 ```terminal
-poetry add --group dev pytest coverage pytest-cov taskipy blue ruff isort
+poetry add --group dev pytest pytest-cov taskipy blue ruff isort
 ```
 ```terminal
-pip install pytest coverage pytest-cov taskipy blue ruff isort
+pipenv install --dev pytest  pytest-cov taskipy blue ruff isort
+```
+```terminal
+pip install pytest pytest-cov taskipy blue ruff isort
 ```
 
 ## Ferramentas de documentação
