@@ -25,13 +25,13 @@ Se você também gostar dessas dicas, me sentirei honrado em poder te ajudar. E 
 - [Isort](https://pycqa.github.io/isort/), para organizar meus imports.
 
 ```terminal
-poetry add --group dev pytest pytest-cov taskipy blue ruff isort
+poetry add --group dev taskipy blue ruff isort pytest pytest-cov
 ```
 ```terminal
-pipenv install --dev pytest  pytest-cov taskipy blue ruff isort
+pipenv install --dev taskipy blue ruff isort pytest pytest-cov
 ```
 ```terminal
-pip install pytest pytest-cov taskipy blue ruff isort
+pip install taskipy blue ruff isort pytest pytest-cov
 ```
 
 ## Ferramentas de documentação
@@ -57,6 +57,14 @@ line-length = 79
 profile = "black"
 line_length = 79
 
+[tool.taskipy.tasks]
+lint = "ruff check . && blue --check -S . --diff && isort --check --diff ."
+format = "blue -S .  && isort ."
+doc = "mkdocs serve"
+pre_test = "task lint"
+test = "pytest -s -x --cov=<YOUR-PROJECT> -vv"
+post_test = "coverage run -m pytest && coverage html"
+
 [tool.coverage.run]
 branch = true
 omit = ["**/*test*.py"]
@@ -65,14 +73,6 @@ omit = ["**/*test*.py"]
 pythonpath = "."
 addopts = "--doctest-modules"
 python_files = "test.py tests.py test_*.py tests_*.py *_test.py *_tests.py"
-
-[tool.taskipy.tasks]
-lint = "ruff . && blue --check . --diff && isort --check --diff ."
-format = "blue .  && isort ."
-doc = "mkdocs serve"
-pre_test = "task lint"
-test = "pytest -s -x --cov=<YOUR-PROJECT> -vv"
-post_test = "coverage run -m pytest && coverage html"
 ```
 {: file="pyproject.toml" }
 
@@ -135,7 +135,6 @@ jobs:
       - uses: actions/checkout@v3
       - uses: isort/isort-action@v1
         with:
-          requirements-files: "requirements.txt"
           configuration: "--profile black -l 79"
   
   tests:
