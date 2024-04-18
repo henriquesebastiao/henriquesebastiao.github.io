@@ -1,4 +1,4 @@
-# The Site Configuration 
+# The Site Configuration
 
 # Import the theme
 theme: jekyll-theme-chirpy
@@ -68,10 +68,10 @@ theme_mode: [dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://imagedelivery.net"  # Cloudflare Images
+# img_cdn: "https://imagedelivery.net"  # Cloudflare Images
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/UnzHYuseZjpgJ5VEgCbryw/f6bf19a2-96b6-45b6-0dc7-f3d41d870100/public" # profile.jpeg
+avatar: "/assets/img/avatar.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
