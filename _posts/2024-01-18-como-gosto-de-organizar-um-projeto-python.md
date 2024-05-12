@@ -1,10 +1,9 @@
 ---
-title: Como gosto de codar em Python
+title: Como gosto de organizar um projeto Python
 author: henriquesebastiao
 date: 2024-01-18 11:24:00 -0400
 categories: [Blog, Programação]
 tags: [blog, programacao, desenvolvimento, python]
-pin: true
 ---
 
 Um guia de ferramentas que sempre uso em meus projetos pessoais Python para organizar o código e mais alguns truques.
@@ -19,19 +18,17 @@ Se você também gostar dessas dicas, me sentirei honrado em poder te ajudar. E 
 
 - [Pytest](https://docs.pytest.org/), para testar meus projetos;
 - [Coverage](https://coverage.readthedocs.io/), para saber se esqueci de testar algo;
-- [Taskipy](https://github.com/taskipy/taskipy), para encurtar grandes comandos;
+- [Taskipy](https://github.com/taskipy/taskipy), uma forma de encurtar comandos enormes;
 - [Blue](https://blue.readthedocs.io/en/latest/index.html), para seguir a PEP8 e formatar o código;
 - [Ruff](https://docs.astral.sh/ruff/), um poderoso linter para Python;
 - [Isort](https://pycqa.github.io/isort/), para organizar meus imports.
+- [Bandit](https://bandit.readthedocs.io/), para verificar vulnerabilidades no código.
+- [Radon](https://radon.readthedocs.io/), para verificar se não estou fazendo algo muito esquisito 😅.
+- [Mypy](https://mypy.readthedocs.io/), um verificador de tipos run time.
+- [Pydocstyle](https://www.pydocstyle.org/), para verificar se estou seguindo o padrão de docstrings.
 
 ```terminal
-poetry add --group dev taskipy blue ruff isort pytest pytest-cov
-```
-```terminal
-pipenv install --dev taskipy blue ruff isort pytest pytest-cov
-```
-```terminal
-pip install taskipy blue ruff isort pytest pytest-cov
+poetry add --group dev taskipy blue ruff isort pydocstyle "bandit[toml]" "radon[toml]" mypy pytest pytest-cov coverage-badge setuptols
 ```
 
 ## Ferramentas de documentação
@@ -41,33 +38,56 @@ pip install taskipy blue ruff isort pytest pytest-cov
 - [mkdocstrings-python](https://mkdocstrings.github.io/python/), o plugin de suporte python para o mkdocstrings.
 
 ```terminal
-poetry add --group doc mkdocs-material mkdocstrings mkdocstrings-python
+poetry add --group doc mkdocs-material mkdocstrings mkdocstrings-python mkdocs-macros-plugin jinja2 pygments pymdown-extensions mkdocs-git-committers-plugin-2 mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin
 ```
-```terminal
-pip install mkdocs-material mkdocstrings mkdocstrings-python
-```
+
+> Claro, para a maioria dos projetos não é necessário instalar todas essas ferraentas, vai depender do que você precisa. Talvez seu projeto não precise de documentação, ou de testes por exemplo.
+{: .prompt-info }
 
 ## Configurações
 
 ```toml
 [tool.ruff]
 line-length = 79
+indent-width = 4
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F403", "F401"]
+"tests/*" = ["F401", "F811"]
 
 [tool.isort]
 profile = "black"
 line_length = 79
 
 [tool.taskipy.tasks]
+ruff = "ruff check ."
+blue = "blue --check . --diff"
+isort = "isort --check --diff ."
+mypy = "mypy -p <YOUR-PROJECT>"
+radon = "radon cc ./<YOUR-PROJECT> -a -na"
+bandit = "bandit -r ./<YOUR-PROJECT>"
+pydocstyle = "pydocstyle ./<YOUR-PROJECT> --count --convention=google --add-ignore=D100,D104,D105,D107"
+quality = "task mypy && task radon && task pydocstyle"
 lint = "ruff check . && blue --check -S . --diff && isort --check --diff ."
 format = "blue -S .  && isort ."
 doc = "mkdocs serve"
 pre_test = "task lint"
 test = "pytest -s -x --cov=<YOUR-PROJECT> -vv"
 post_test = "coverage run -m pytest && coverage html"
+badge = "coverage-badge -o docs/assets/coverage.svg -f"
+ready = "task lint && task quality && task bandit && pytest -s -x --cov=<YOUR-PROJECT> -vv && coverage html && task export-requirements && task export-requirements-doc && task badge"
+
+[tool.mypy]
+ignore_missing_imports = true
+check_untyped_defs = true
 
 [tool.coverage.run]
-branch = true
-omit = ["**/*test*.py"]
+source = [
+    "<YOUR-PROJECT>",
+]
+omit = [
+    "/tests/*",
+]
 
 [tool.pytest.ini_options]
 pythonpath = "."
@@ -123,7 +143,7 @@ jobs:
     name: Ruff
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: chartboost/ruff-action@v1
         with:
           version: "0.1.3"
@@ -132,34 +152,10 @@ jobs:
     name: Isort
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: isort/isort-action@v1
         with:
           configuration: "--profile black -l 79"
-  
-  tests:
-    name: Tests
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 4
-      matrix:
-        python-version: [ 3.11 ]
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v3
-        with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Run Tests
-        run: pytest -s -x --cov=<NAME-OF-YOUR-PYTHON-PACKAGE> -vv
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 ```
 {: file=".github/workflows/ci.yml" }
 
