@@ -11,4 +11,3 @@ This site is made with [Jekyll](https://jekyllrb.com/) using the beautiful [Chir
 ## License
 
 This work is published under [MIT](LICENSE) License.
-
