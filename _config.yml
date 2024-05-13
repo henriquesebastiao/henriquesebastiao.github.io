@@ -41,8 +41,17 @@ social:
     - https://twitter.com/hick_hs
     - https://github.com/henriquesebastiao
     - https://www.linkedin.com/in/henriquesebastiao
+    - https://bolha.us/@henriquesebastiao
+    - https://www.instagram.com/hick.hs/
 
-google_site_verification: B2F5DBVpmj2QL-_8mF2X7e_Bxi_KuMdBeZ1zaKrq9BY
+# Site Verification Settings
+webmaster_verifications:
+  google: B2F5DBVpmj2QL-_8mF2X7e_Bxi_KuMdBeZ1zaKrq9BY
+  bing: # fill in your Bing verification code (Not necessary as I already imported from Google Search Console)
+  alexa: # fill in your Alexa verification code
+  yandex: # fill in your Yandex verification code
+  baidu: # fill in your Baidu verification code
+  facebook: # fill in your Facebook verification code
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -52,7 +61,7 @@ analytics:
   google:
     id: G-BVJ8VX0FC9 # fill in your Google Analytics ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: henriquesebastiao
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -61,6 +70,10 @@ analytics:
     domain: # fill in your Matomo domain
   cloudflare:
     id: 510965fd9db643a0a76796a949c59d44
+
+# Pageviews settings
+pageviews:
+  provider: goatcounter
 
 # Prefer color scheme setting.
 #
@@ -80,10 +93,14 @@ theme_mode: [dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-# img_cdn: "https://imagedelivery.net"  # Cloudflare Images
+# cdn: "https://imagedelivery.net"  # Cloudflare Images
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/assets/img/avatar.png"
+
+# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
+# It can be overridden by a customized `page.image` in front matter.
+social_preview_image: "/assets/img/social-preview-image.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -122,7 +139,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "https://henriquesebastiao.com"
 
 # ------------ The following options are not recommended to be modified ------------------
 
