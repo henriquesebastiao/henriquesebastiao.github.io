@@ -47,9 +47,18 @@ google_site_verification: B2F5DBVpmj2QL-_8mF2X7e_Bxi_KuMdBeZ1zaKrq9BY
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
+# Web Analytics Settings
 analytics:
   google:
-    id: G-BVJ8VX0FC9
+    id: G-BVJ8VX0FC9 # fill in your Google Analytics ID
+  goatcounter:
+    id: # fill in your GoatCounter ID
+  umami:
+    id: # fill in your Umami ID
+    domain: # fill in your Umami domain
+  matomo:
+    id: # fill in your Matomo ID
+    domain: # fill in your Matomo domain
   cloudflare:
     id: 510965fd9db643a0a76796a949c59d44
 
@@ -80,7 +89,7 @@ avatar: "/assets/img/avatar.png"
 toc: true
 
 comments:
-  active: "giscus" # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  provider: [giscus] # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
