@@ -16,10 +16,10 @@ timezone: America/Cuiaba
 
 title: Henrique Sebastião # the main title
 
-tagline: Desenvolvedor back-end em busca de um bom Wi-Fi, música de qualidade e um café bem gostoso. # it will display as the sub-title
+tagline: Desenvolvedor back-end Python. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Sou graduando em Ciência da Computação, sou fascinado por tecnologia, o que me faz explorar os desafios empolgantes do mundo da programação e a criar soluções úteis para as pessoas ao meu redor. Tenho me aprimorado principalmente na linguagem Python, dedicando-me a criar soluções robustas e eficientes. Estou animado para contribuir e aprender em um ambiente dinâmico e inovador. Vamos conectar e explorar as possibilidades juntos!
+  Vivendo cada dia com um pouco de café, código e uma boa música.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
