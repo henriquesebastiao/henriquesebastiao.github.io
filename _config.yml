@@ -47,8 +47,11 @@ google_site_verification: B2F5DBVpmj2QL-_8mF2X7e_Bxi_KuMdBeZ1zaKrq9BY
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-google_analytics:
-  id: G-BVJ8VX0FC9
+analytics:
+  google:
+    id: G-BVJ8VX0FC9
+  cloudflare:
+    id: 510965fd9db643a0a76796a949c59d44
 
 # Prefer color scheme setting.
 #
