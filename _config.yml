@@ -16,10 +16,10 @@ timezone: America/Cuiaba
 
 title: Henrique Sebastião # the main title
 
-tagline: Desenvolvedor back-end Python. # it will display as the sub-title
+tagline: Desenvolvedor back-end Python, vivendo cada dia com um pouco de café, código e uma boa música. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Vivendo cada dia com um pouco de café, código e uma boa música.
+  Sou desenvolvedor de software e graduando em Ciência da Computação.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -93,10 +93,10 @@ theme_mode: [dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-# cdn: "https://imagedelivery.net"  # Cloudflare Images
+cdn: "https://imagedelivery.net/UnzHYuseZjpgJ5VEgCbryw/"  # Cloudflare Images
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/avatar.png"
+avatar: "f6bf19a2-96b6-45b6-0dc7-f3d41d870100/public"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
