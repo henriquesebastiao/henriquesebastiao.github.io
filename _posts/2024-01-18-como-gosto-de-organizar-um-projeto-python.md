@@ -2,8 +2,8 @@
 title: Como gosto de organizar um projeto Python
 author: henriquesebastiao
 date: 2024-01-18 11:24:00 -0400
-categories: [Blog, Programação]
-tags: [blog, programacao, desenvolvimento, python]
+categories: [Desenvolvimento, Python]
+tags: [programacao, desenvolvimento, python]
 ---
 
 Um guia de ferramentas que sempre uso em meus projetos pessoais Python para organizar o código e mais alguns truques.

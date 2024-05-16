@@ -2,8 +2,6 @@
 title: Hello World!
 author: henriquesebastiao
 date: 2024-01-02 10:45:00 -0400
-categories: [Blog]
-tags: [blog, hello-world]
 ---
 
 Finalmente encontrei uma maneira que me agrade para escrever um blog.
