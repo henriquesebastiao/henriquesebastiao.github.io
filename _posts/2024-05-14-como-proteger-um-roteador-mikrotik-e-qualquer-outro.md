@@ -9,7 +9,7 @@ tags: [mikrotik, segurança, redes, firewall]
 
 Desde o ano de 2021 tenho trabalhado predominantemente como técnico de redes, eu realmente sou o cara de campo do suporte técnico. Nesse meio tempo eu nunca precisei de fato aprender a configurar roteadores Mikrotik, mas como eu acabei tendo interesse e posteriormente ingressando em um curso superior de tecnologia, eu meio que entrei nesse mundo por entuasiasmo mesmo.
 
-Já faz algum tempo que venho pensando sobre a negligencia que muitas pessoas, e até empresas acabam tendo ao configurar roteadores Mikrotik, deixando sua redes totatlmente vulnerávels para eventuais ataques, óbviamente essa não devia ser a intenção, mas algumas coisas acabam passando despercebidas aos olhos menos experientes. Tendo em vista essa falha, hoje venho compartilhar um pouco de tudo que já aprendi na vida, com os erros e com outras pessoas muito mais capacitadas do que eu.
+Já faz algum tempo que venho pensando sobre a negligencia que muitas pessoas, e até empresas acabam tendo ao configurar roteadores Mikrotik, deixando sua redes totalmente vulnerávels para eventuais ataques, óbviamente essa não devia ser a intenção, mas algumas coisas acabam passando despercebidas aos olhos menos experientes. Tendo em vista essa falha, hoje venho compartilhar um pouco de tudo que já aprendi na vida, com os erros e com outras pessoas muito mais capacitadas do que eu.
 
 > A maioria dos passos citados nesse artigo são voltados para roteadores Mikrotik, mas os conceitos podem ser aplicados em quaisquer outros roteadores, e até mesmo outros tipos de dispositivos.
 {: .prompt-info }
