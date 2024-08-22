@@ -47,9 +47,6 @@ No mundo da programação já ouvi pessoas falando, “Ah, eu uso Python 3.7 por
 
 O mesmo vale para roteradores. A maioria das profissionais de redes ainda usam até hoje versões relativamente antigas de firmwares, uma rápida pesquisa por dispositivos Mikrotik no [Shodan.io](https://www.shodan.io/) mostra isso:
 
-![RouterOS Versions on Shodan](81755110-a3ad-4b1c-fc58-51ba50ac2300/public){: width="972" height="589" }
-_Pesquisa por versões de RouterOS no Shodan.io_
-
 Aqui vemos a versão 6.48.6 sendo usada pela maioria dos dispositivos Mikrotik visíveis na internet, tal versão foi anunciada no dia 12 de dezembro de 2021, e atualmente na data em que este artigo foi escrito, a versão mais recente v6 do RouterOS é a 6.49.13 (long-term). O problema é que a própria versão 6.48.6 possui vulnerabilidade conhecidas, como descrito a seguir.
 
 > [CVE-2023-30799](https://nvd.nist.gov/vuln/detail/CVE-2023-30799) - MikroTik RouterOS antes de 6.49.7 (stable) e até 6.48.6 (long-term) são vulneráveis a um problema de escalonamento de privilégios. Um invasor remoto e autenticado pode escalar privilégios de administrador para superadministrador no Winbox ou na interface HTTP. O invasor pode abusar dessa vulnerabilidade para executar código arbitrário no sistema.
@@ -82,9 +79,6 @@ Potas conhecidas como SSH, HTTP e WINBOX expostas na internet, são frequentemen
 - www-ssl: 443
 
 A pesquisa no Shodan por portas abertas em roteadores Mikrotik mostra que a maioria doa dispositivos utilizam as portas padrões, tanto para Winbox (8291), quanto para HTTP(80).
-
-![RouterOS Open Ports on Shodan](a9ff8834-377f-487e-5bd7-f516ab5a7d00/public){: width="972" height="589" }
-_Pesquisa por portas abertas em dispositivos Mikrotik no Shodan.io_
 
 Para alterar a porta default de um serviço, você pode utilizar o comando abaixo no terminal:
 

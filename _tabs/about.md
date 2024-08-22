@@ -4,30 +4,46 @@ icon: fas fa-info-circle
 order: 5
 ---
 
-## Olá! Eu sou [@henriquesebastiao](https://twitter.com/hick_hs) 👋
+### Olá! Eu sou Henrique Sebastião 👋
 
 Sou desenvolvedor de software e graduando em Ciência da Computação no Brasil. 🇧🇷
 
-Gosto de criar coisas com Python, bancos de dados SQL, Docker e estruturas de back-end modernas para resolver problemas das pessoas ao meu redor. 🚀
+Gosto de criar coisas com Python, bancos de dados SQL, Docker e estruturas de back-end modernas para resolver problemas
+das pessoas ao meu redor. Ultimamente também venho me aventurando no estudo e desenvolvimento para embarcados como Arduino, ESP32, etc...
 
-Atualmente tenho dedicado grande parte do meu tempo ao estudo do [Django](https://www.djangoproject.com/) para desenvolvimento web.
+Atualmente, tenho dedicado grande parte do meu tempo de estudo às atividades acadêmicas, estudando em paralelo tecnologias como Python, Django, FastAPI, C, C++,e um pouco da tríade do front-end (JavaScript, HTML e CSS).
 
-Você pode me encontrar em:
+#### Meus principais projetos pessoais:
 
-* [Meu site: henriquesebastiao.com](https://henriquesebastiao.com) (você está aqui).
-* [Twitter como @hick_hs](https://twitter.com/hick_hs)
+* [Poupy](https://github.com/henriquesebastiao/poupy): Um aplicativo web para gestão de orçamento pessoal feito com Django.
+* [Statbov](https://github.com/henriquesebastiao/statbov): Uma plataforma para acompanhamento de performance de bovinos desenvolvida com Django e Bootstrap.
+* [Timesheet](https://github.com/henriquesebastiao/timesheet): Um sistema simples de ponto eletrônico e exportação da folha de ponto em PDF usando Django Admin.
+* [Netmikro](https://github.com/henriquesebastiao/netmikro): Uma API Python para administração de roteadores Mikrotik.
+* [Skyport](https://github.com/henriquesebastiao/skyport): CLI para obter informações sobre corpos celestes.
+* [Saturn](https://github.com/henriquesebastiao/saturn): Firmware de red team para o Cardputer, incluindo funcionalidades Wi-Fi e bluetooth e muito mais.
+
+#### Você pode me encontrar em:
+
 * [Linkedin](https://www.linkedin.com/in/henriquesebastiao/)
 * [Email](mailto:contato@henriquesebastiao.com)
 
-<!-- Ícones de Tecnologias -->
 <div style="display: inline_block">
   <h4>Tecnologias e ferramentas que utilizo:</h4>
-  <img align="center" alt="Python" height="30" width="40" src="4ab506f8-88cd-47b2-41c3-a56e15179f00/public">
-  <img align="center" alt="Django" height="30" width="40" src="b552b93a-eeb5-4e8f-ebd7-ae82570a2800/public">
-  <img align="center" alt="HTML" height="30" width="40" src="8116890d-7a7a-4f7c-1d97-d8e796f33400/public">
-  <img align="center" alt="CSS" height="30" width="40" src="a9fb8cb3-e4c7-40a0-88e9-9dd1d1a1f100/public">
-  <img align="center" alt="PostgreSQL" height="30" width="40" src="b4e680fd-05b4-4fb3-2450-35a2993d4e00/public">
-  <img align="center" alt="Docker" height="30" width="40" src="5af7dfd1-78a2-4c2f-b51a-ee50af615c00/public">
-  <img align="center" alt="Arch" height="30" width="40" src="23d5e6fc-2f04-41a0-2071-78bba3313500/public">
-  <img align="center" alt="Arduino" height="30" width="40" src="5df9d677-527a-4037-3ced-97e5cbed7f00/public">
+  <img align="center" alt="Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
+  <img align="center" alt="FastAPI" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg">
+  <img align="center" alt="JS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg">
+  <img align="center" alt="HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg">
+  <img align="center" alt="C" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg">
+  <img align="center" alt="C++" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg">
+  <img align="center" alt="Arduino" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg">
+  <img align="center" alt="PostgreSQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg">
+  <img align="center" alt="Docker" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg">
+  <img align="center" alt="Docker" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg">
+</div>
+
+<div style="display: inline_block">
+  <h4>Minhas redes sociais:</h4>
+  <a href="https://www.linkedin.com/in/henriquesebastiao/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" target="_blank" alt="LinkedIn"></a>
+  <a href="https://bolha.us/@henriquesebastiao" target="_blank"><img src="https://img.shields.io/badge/Mastodon-6364FF?style=flat&logo=mastodon&logoColor=white" target="_blank" alt="Mastodon"></a>
 </div>
