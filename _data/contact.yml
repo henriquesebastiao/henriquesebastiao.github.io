@@ -1,16 +1,20 @@
 #  The contact options.
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
 
-- type: instagram
-  icon: 'fa-brands fa-instagram'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.instagram.com/hick.hs/'
+# - type: instagram
+#   icon: 'fa-brands fa-instagram'   # icons powered by <https://fontawesome.com/>
+#   url:  'https://www.instagram.com/hick.hs/'
 
 # - type: rss
 #   icon: "fas fa-rss"
 #   noblank: true
 # Uncomment and complete the url below to enable more contact options
+
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true # open link in current tab
 
 - type: mastodon
   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
@@ -27,6 +31,14 @@
 #  icon: 'fab fa-stack-overflow'
 #  url:  'https://stackoverflow.com/users/18069004/henrique-sebasti%c3%a3o'                  # Fill with your stackoverflow homepage
 
-# - type: email
-#   icon: "fas fa-envelope"
-#   noblank: true # open link in current tab
+# - type: bluesky
+#   icon: 'fa-brands fa-bluesky'
+#   url: ''                   # Fill with your Bluesky profile link
+#
+# - type: reddit
+#   icon: 'fa-brands fa-reddit'
+#   url: ''                   # Fill with your Reddit profile link
+#
+# - type: threads
+#   icon: 'fa-brands fa-threads'
+#   url: ''                   # Fill with your Threads profile link
