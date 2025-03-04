@@ -2,6 +2,10 @@ SRC_DIR := .
 SHELL_SCRIPTS := $(wildcard $(SRC_DIR)/*.sh)
 
 run:
-	bundle exec jekyll s
+	./tools/run.sh
+
+test:
+	./tools/test.sh
 
 .PHONY: run
+.PHONY: test

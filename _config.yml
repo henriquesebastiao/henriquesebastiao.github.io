@@ -28,17 +28,16 @@ url: "https://henriquesebastiao.com"
 github:
   username: henriquesebastiao
 
-twitter:
-  username: hick_hs
+# twitter:
+#   username:
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Henrique Sebastião
-  email: contato@henriquesebastiao.com # change to your email address
+  email: contato@henriquesebastiao.com
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/hick_hs
     - https://github.com/henriquesebastiao
     - https://www.linkedin.com/in/henriquesebastiao
     - https://bolha.us/@henriquesebastiao
@@ -60,7 +59,7 @@ analytics:
   google:
     id: G-BVJ8VX0FC9 # fill in your Google Analytics ID
   goatcounter:
-    id: henriquesebastiao
+    id: # fill in your GoatCounter ID
   umami:
     id: 3a33fd4e-72e9-4dbd-becc-3f0d453ae7cc
     domain: https://umami.henriquesebastiao.com
@@ -72,7 +71,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: goatcounter
+  provider: # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #

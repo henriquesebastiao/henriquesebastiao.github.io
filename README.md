@@ -1,13 +1,34 @@
-# Henrique Sebastião
+# 📝 Blog pessoal e Portifólio
 
-[![License](https://img.shields.io/github/license/henriquesebastiao/henriquesebastiao.github.io)](https://github.com/henriquesebastiao/henriquesebastiao.github.io/blob/main/LICENSE)
+Este é meu blog pessoal e portifólio, feito com [Jekyll](https://jekyllrb.com/) e o belíssimo tema [Chirpy](https://chirpy.cotes.page/).
 
-My personal blog, to share my path and my knowledge.
+A ideia aqui é ter um lugar sob o meu controle, onde eu possa compartilhar meus pensamentos, percepções e devaneios. Já há algum tempo em que venho cogitando a abordagem que mais me agradasse para escrever meus posts, depois de algum tempo teste essa implementação com Jekyll cheguei a conclusão de que vou seguir por esse caminho. Primeiro porque escrever em Markdown me é agradável e simples, mas principalmente porque é portável. Se do dia para a noite o GitHub Pages deixar de existir posso auto-hospedar a página, ou se até mesmo o Jekyll se tornar obsoleto posso facilmente migrar meus arquivos `.md` para outra plataforma.
 
-## Reference
+### 🛠️ Construindo
 
-This site is made with [Jekyll](https://jekyllrb.com/) using the beautiful [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme.
+Para instalar as dependências de desenvolvimento, siga os seguintes passos:
 
-## License
+1. Instale o `ruby` e o `rubygems`.
+2. Instale o `bundler` com o comando:
 
-This work is published under [MIT](LICENSE) License.
+```shell
+gem install bundler
+```
+
+3. Configure o bundler para instalar as dependências do projeto na pasta do projeto:
+
+```shell
+bundle config set --local path '.bundle'
+```
+
+4. Instale as dependências:
+
+```shell
+bundle install
+```
+
+5. Por fim inicialize a aplicação:
+
+```shell
+make run
+```
