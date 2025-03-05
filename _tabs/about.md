@@ -2,7 +2,12 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 5
+title: Sobre Mim
 ---
+
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<link rel="stylesheet" type='text/css' href="/assets/css/about.css" />
+<script src="/assets/js/about.js" defer></script>
 
 ### Olá! Eu sou Henrique Sebastião 👋
 
@@ -27,23 +32,6 @@ Atualmente, tenho dedicado grande parte do meu tempo de estudo às atividades ac
 * [Linkedin](https://www.linkedin.com/in/henriquesebastiao/)
 * [Email](mailto:contato@henriquesebastiao.com)
 
-<div style="display: inline_block">
-  <h4>Tecnologias e ferramentas que utilizo:</h4>
-  <img align="center" alt="Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
-  <img align="center" alt="FastAPI" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg">
-  <img align="center" alt="JS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg">
-  <img align="center" alt="HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg">
-  <img align="center" alt="CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg">
-  <img align="center" alt="C" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg">
-  <img align="center" alt="C++" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg">
-  <img align="center" alt="Arduino" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg">
-  <img align="center" alt="PostgreSQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg">
-  <img align="center" alt="Docker" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg">
-  <img align="center" alt="Docker" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg">
-</div>
+<hr class="about">
 
-<div style="display: inline_block">
-  <h4>Minhas redes sociais:</h4>
-  <a href="https://www.linkedin.com/in/henriquesebastiao/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" target="_blank" alt="LinkedIn"></a>
-  <a href="https://bolha.us/@henriquesebastiao" target="_blank"><img src="https://img.shields.io/badge/Mastodon-6364FF?style=flat&logo=mastodon&logoColor=white" target="_blank" alt="Mastodon"></a>
-</div>
+<div id="tools"></div>

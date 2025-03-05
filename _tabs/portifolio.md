@@ -11,7 +11,33 @@ Alguns do projetos que desenvolvi durante esse tempo de estudo em desenvolviment
 
 ### [Poupy](https://github.com/henriquesebastiao/poupy)
 
-Um webapp de gestão financeira pessoal desenvolvido com Python, Django e PostgreSQL para o backend e HTML com CSS puro no frontend. O projeto foi desenvolvido com o intuito de aprender mais sobre desenvolvimento web e a aplicação das regras de negócio em um sistema real.
+Poupy é um aplicativo web para gerenciamento de orçamento e gastos pessoais, desenvolvido com Django. Ele permite o controle financeiro completo, incluindo a gestão de contas bancárias, receitas, despesas e transferências de saldo entre contas. Com um dashboard intuitivo, o usuário pode visualizar rapidamente um resumo financeiro mensal e manter suas finanças organizadas.
+
+Link do deploy: [https://poupy.henriquesebastiao.com](https://poupy.henriquesebastiao.com/app/login)
+
+> Na página de login, clique no botão <kbd>Login as Demo User</kbd> para ver uma demonstração das funcionalidades do app.
+{: .prompt-tip }
+
+#### Funcionalidades
+
+- **Adição de contas bancárias**: Adicione e gerencie várias contas bancárias.
+- **Registro de receitas e despesas**: Registre suas entradas e saídas de dinheiro para melhor controle.
+- **Transferência entre contas**: Movimente saldo entre contas cadastradas.
+- **Dashboard completo:**
+    - Saldo total de todas as contas.
+    - Total de entradas e saídas mensais para um resumo rápido do fluxo financeiro.
+    - Saldo por conta para acompanhar a situação de cada conta individualmente.
+    - Maiores movimentações: Exibe as três maiores movimentações do mês, destacando receitas e despesas mais significativas.
+
+Tecnologias e ferramentas usadas no projeto:
+
+- **Python** com **Django** para o backend.
+- **HTML5** e **CSS3** para o frontend.
+- **PostgreSQL** para armazenamento de dados.
+- **PyTest** e **Selenium** para testes unitários e funcionais.
+- **Docker** para desenvolvimento em containers.
+- **Ruff** para formatação de código.
+- **GitHub Actions** para execução de pipelines de CI.
 
 ### [Skyport ✨](https://github.com/henriquesebastiao/skyport)
 
